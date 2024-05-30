@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="style.css"
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="../festivalico.png"/>
+    </head>
+    <body>
+      <nav class="navbar">
+        <a href="index.html" class="logo"><img src="data/logo_small.png"></a>
+        <a href="data/qrbtc.png" class="btc"><img src="data/btc.ico"></a>
+        <a href="https://www.instagram.com/festhogo66/" class="insta"><img src=data/instagram.ico></a>
+        <a href="https://discord.gg/zmC5MwsaZS" class="discord"><img src=data/discord.ico></a>
+        <a href="login.html" class="login"><img src=data/login.ico></a>
+        <a href="contact.html" class="help"><img src=data/help.ico></a>
+        <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1F0sijgNaJdgit?si=2O_kpuEBRrSMv7SNK4B6MQ" class="spotify"><img src="data/spotify.ico"></a>
+        <a href="billetterie.html" class="cb"><img src="data/cb.png"></a>
+      </nav>
+      <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> 
+      window.start.init({Palette:"palette3",Mode:"floating right",Theme:"classic",Location:"https://www.instagram.com/thomas_mrs_/?hl=fr",Time:"5",
+      Message:"Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site.",LinkText:"En savoir plus",ButtonText:"Accepter",})</script>
+      <div class="plan">
+        <h1>Plan Festival</h1>
+        <img src="data/plan.png">
+      </div>
+      <div class="horaire">
+        <h1>Horaire</h1>
+        <img src="data/horaire.jpg"
+      </div>
+      </div>
+      <embed src="data/backgroundsong.mp3" loop="true" autostart="true" width="2" height="0">
+        <div class="carouselbox">
+          <div class="fleche">
+            <div class="prev">
+               <a class="offscreen"><img src="data/retour.ico"></a>
+            </div>
+            <div class="next">
+              <a class="offscreen"><img src="data/suivant.ico"></a>
+            </div>
+          </div>
+          <ol class="content">
+            <li class="current"><a href="https://open.spotify.com/artist/6Te49r3A6f5BiIgBRxH7FH?si=IihTOdrYR3SNucbs3iDdBw"><img src="data/ninho.jpg"></a></li>
+            <li><a href="https://open.spotify.com/artist/54kCbQZaZWHnwwj9VP2hn4?si=8su2SkmHS--uepCSf-8yXw"><img src="data/zola.jpg"></a></li>
+            <li><a href="https://open.spotify.com/artist/3QVolfxko2UyCOtexhVTli?si=E0K-8dUyTlCyucZoBX_ktQ"><img src="data/angel.jpg"></a></li>
+            <li><a href="https://open.spotify.com/artist/4FpJcNgOvIpSBeJgRg3OfN?si=eibDy7GDSC-8tYJ-Rl5bKg"><img src="data/orelsan.jpg"></a></li>
+            <li><a href="https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4?si=KLDRK-DcQcizo1VbTDdvMQ"><img src="data/drake.jpg"></a></li>
+            <li><a href="https://open.spotify.com/artist/3NH8t45zOTqzlZgBvZRjvB?si=KgS7A28FTC-Ul6ViHjqheA"><img src="data/pnl.jpg"></a></li>
+          </ol>
+        </div>
+        
+        <script>
+        
+        carousel = (function(){
+        
+          if (!document.querySelector || 
+              !('classList' in document.body)) {
+            return false;
+          }
+          var box = document.querySelector('.carouselbox');
+          var next = box.querySelector('.next');
+          var prev = box.querySelector('.prev');
+          var counter = 0;
+          var items = box.querySelectorAll('.content li');
+          var amount = items.length;
+          var current = items[0];
+          box.classList.add('active');
+          function navigate(direction) {
+            current.classList.remove('current');
+            counter = counter + direction;
+            if (direction === -1 && 
+                counter < 0) { 
+              counter = amount - 1; 
+            }
+            if (direction === 1 && 
+                !items[counter]) { 
+              counter = 0;
+            }
+            current = items[counter];
+            current.classList.add('current');
+          }
+          next.addEventListener('click', function(ev) {
+            navigate(1);
+          });
+          prev.addEventListener('click', function(ev) {
+            navigate(-1);
+          });
+          navigate(0);
+        })();
+        </script>    
+    </body>
+</html>

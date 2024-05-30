@@ -1,0 +1,98 @@
+@font-face {
+
+    font-family: 'Sono', sans-serif;
+    font-family: 'Coiny', cursive;
+}
+
+body{
+    position: flex;
+    background-image: url(data/background.jpg);
+    font-family: 'foxykidsregular';
+}
+.logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.login{
+    position: absolute;
+    right:5px;
+}
+.insta{
+    position : absolute;
+    right : 65px;
+}
+.discord{
+    position: absolute;
+    right: 125px
+}
+.btc{
+    position: absolute;
+    right:185px
+}
+.help{
+    position: absolute;
+    right:5px;
+    bottom:0px;
+}
+.cb{
+    position: absolute;
+    right:245px;
+}
+.prev{
+    position:absolute;
+    display: flex;
+    left:650px;
+    bottom:800px;
+}
+.next{
+    position:absolute;
+    display: flex;
+    right:650px;
+    bottom:800px;
+}  
+.spotify{
+    position: absolute;
+    left:5px;
+    bottom:5px;
+}
+.content li {
+    width: 100%;
+    text-align: center;
+}
+.active li {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 1s;
+    filter: drop-shadow(-20px -10px 10px #ff00005e);
+}
+.active li.current {
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: 1s;
+}
+.plan{
+    position: absolute;
+    right:100px;
+    bottom:300px;
+    text-align: center;
+    color :darkmagenta;
+    filter: drop-shadow(20px 5px 10px #ff00ea);
+}
+ol{
+    list-style-type: none;
+    display:flex;
+    position:flex;
+}
+.horaire{
+    text-align: center;
+    position: absolute;
+    bottom: 200px;
+    left:100px;
+    color :rgb(55, 230, 32);
+    filter: drop-shadow(-20px 5px 10px #ecbe24);
+}

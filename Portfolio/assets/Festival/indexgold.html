@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <title>Payment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(data/background.jpg);
+            font-family: "Nunito Sans";
+        }
+
+        label,
+        li,
+        h1,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: #fff;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .form-control::placeholder {
+
+            color: #fff;
+
+
+
+        }
+
+        .form-control {
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid #313131;
+            background: none;
+            font-size: 18px;
+            border-radius: 0px;
+            margin-top: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .form-control:active {
+            outline: none;
+            border: none;
+        }
+        .logotelethon{
+            position: absolute;
+            right: 5px;
+            bottom:5px;
+        }
+        .dontelethon{
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+        }
+
+        .form-control:focus {
+            background: none;
+            box-shadow: none;
+            outline: none;
+            border: none;
+
+            border-bottom: 2px solid #495057;
+            outline: 0;
+        }
+
+        .form-control:hover {
+            border-bottom: 2px solid #495057;
+            outline: none;
+            border-color: none;
+        }
+
+        .container {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #495057 !important;
+            border-color: #495057 !important;
+            height: 50px;
+            line-height: 50px;
+            margin-top: 10px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            --webkit-appearance: none;
+            margin: 0;
+        }
+
+        @media(max-width: 992px) {
+            .mob-pl-0 {
+                padding-left: 0px !important;
+            }
+        }
+
+        @media(max-width:576px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+ </head>
+
+ <body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="data/logo_small.png" alt></a>
+    </nav>
+    <a href="https://www.afm-telethon.fr/fr/agir/je-donne/faire-un-don" class="dontelethon"><img src="data/don.ico"></a>
+    <a href="https://www.afm-telethon.fr/fr" class="logotelethon"><img src="data/logotelethon.png"></a>
+    <h3 class="text-center p-3">FesThogo Payment</h3>
+    <div class="container mb-4">
+        <div class="row pt-2 pb-4">
+            <div class="col-lg-8">
+                <form action="#">
+                    <div class="row pt-4">
+                        <div class="col-lg-6 pl-0">
+
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Nom" required>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+
+                            <div class="form-group">
+
+                                <textarea class="form-control" rows="5" placeholder="Adresse" id="Address"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Ville" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" placeholder="Pays" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0 mob-pl-0">
+                                    <div class="form-group">
+
+                                        <input type="number" class="form-control" placeholder="Code Postal" required>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6 mob-pl-0">
+
+
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="Nom de Carte" required>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="number" class="form-control" placeholder="Numero de Carte" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" placeholder="Date Expiration" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0 mob-pl-0">
+                                    <div class="form-group">
+
+                                        <input type="number" class="form-control" placeholder="CVV" irequired>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 p-0 text-center">
+                                    <p class="mb-1 pb-2">Cartes acceptées</p>
+                                    <img src="data/payment.png" alt="#" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-4 pt-1">
+                <div class="row pt-4">
+                    <div class="col-8">
+                        <h3 class="mb-0 pb-2"></h3>
+                    </div>
+                    <div class="col-4">
+                        <h3 class="mb-0 pb-2"></h3>
+                    </div>
+                </div>
+                <div class="row  pt-2">
+                    <div class="col-8">
+
+                        <h5 class="pb-2">Place</h5>
+                        <h5 class="pb-2">Assurance Revente</h5>
+                        <h5 class="pb-2">TVA</h5>
+
+                    </div>
+                    <div class="col-4">
+
+                        <h5 class="pb-2">64€</h5>
+                        <h5 class="pb-2">5€</h5>
+                        <h5 class="pb-2">2€</h5>
+                    </div>
+                </div>
+                <div class="row border-top  border-dark">
+                    <div class="col-8">
+                        <h5 class="pt-2">Total</h5>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="pt-2">71€</h5>
+                    </div>
+                </div>
+                <div class="row pb-5 pt-4">
+                    <div class="col-12">
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Adresse de livraison identique à facturation
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100"><a href="https://www.paypal.com/paypalme/Thomas66160">Compléter le Paiement</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ </body>
+
+</html>

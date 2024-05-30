@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="style.css"
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="data/logo_small.png"></a>
+            <title>Billetterie</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+            <style type="text/css">
+              .content{
+              border: 1px solid #ddd;
+              border-radius: 10px;
+              padding: 30px;
+              }
+              .content:hover{
+              background:rgb(200, 96, 248);
+              }
+              .logotelethon{
+              position: absolute;
+              right: 5px;
+              bottom:-429px;
+              }
+              .dontelethon{
+              position: absolute;
+              left: 5px;
+              bottom: -425px;
+              }
+              .content:hover p,.content:hover h2,.content:hover h3{
+              color: #fff;
+              }
+              h3,h2{
+              text-align: center;
+              }
+              h3{
+              text-transform: uppercase;
+              font-size: 40px;
+              font-weight: 700;
+              }
+              h2{
+              font-size:40px;
+              font-weight: 700;
+              }
+              p{
+              margin:0;
+              color: #291818;
+              text-align: center;
+              padding: 10px;
+              text-transform: capitalize;
+              font-size: 22px;
+              }
+              span{
+              font-size: 18px;
+              padding-right: 1px;
+              }
+              .btn-dark{
+              display: block;
+              margin: 10px auto;
+              width: 65%;
+              padding: 10px;
+              border-radius: 400px;
+              font-weight: 600;
+              }
+              .btn-dark:hover{
+              background: #fff;
+              color: #000;
+              }
+              @media(max-width: 992px){
+              h3{
+              font-size: 30px;
+              }
+              }
+              @media(max-width: 768px){
+              .content{
+              margin: 20px;
+              }
+              }
+            </style>
+          </head>
+          <body>
+            <a href="https://www.afm-telethon.fr/fr" class="logotelethon"><img src="data/logotelethon.png"></a>
+            <a href="https://www.afm-telethon.fr/fr/agir/je-donne/faire-un-don" class="dontelethon"><img src="data/don.ico"></a>
+            <div class="container pt-5">
+              <div class="row">
+                <div class="col-md-4" data-tilt>
+                  <div class="content">
+                    <h3>Silver</h3>
+                    <h2 class="pt-4">45<span>€</span></h2>
+                    <p>✓Accès au festival</p>
+                    <p>✗autographe artiste</p>
+                    <p>✗carré VIP</p>
+                    <p>✗boisson a volonté</p>
+                    <button type="button" class="btn btn-dark"><a href="indexsilver.html">Payer</a></button>
+                  </div>
+                </div>
+                <div class="col-md-4" data-tilt>
+                  <div class="content">
+                    <h3>Gold</h3>
+                    <h2 class="pt-4">64<span>€</span></h2>
+                    <p>✓Accès au festival</p>
+                    <p>✓autographe artiste</p>
+                    <p>✗carré VIP</p>
+                    <p>✗boisson a volonté</p>
+                    <button type="button" class="btn btn-dark"><a href="indexgold.html">Payer</a></button>
+                  </div>
+                </div>
+                <div class="col-md-4" data-tilt>
+                  <div class="content">
+                    <h3>Platinum</h3>
+                    <h2 class="pt-4">85<span>€</span></h2>
+                    <p>✓Accès au festival</p>
+                    <p>✓autographe artiste</p>
+                    <p>✓carré VIP</p>
+                    <p>✓boisson a volonté</p>
+                    <button type="button" class="btn btn-dark"><a href="indexplatine.html">Payer</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+        </nav>
+    </body>

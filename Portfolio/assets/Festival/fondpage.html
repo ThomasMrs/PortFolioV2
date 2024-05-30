@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Ripple Effect on Click & Hover In Jquery</title>
+    <style>
+      body{
+      margin: 0;
+      }
+      .full-landing-image{
+      width: 100%;
+      height: 100vh;
+      background: url(https://unsplash.com/photos/ntr6MBjX1Eg/download?ixid=MnwxMjA3fDB8MXxhbGx8NTN8fHx8fHwyfHwxNjQzMDk3NjQ5&force=true&w=1920) no-repeat center;
+      background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="full-landing-image"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+              $(".full-landing-image").ripples({
+            resolution: 300,
+            perturbance: .006,
+        });
+      })   
+    </script>
+  </body>
+</html>

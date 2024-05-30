@@ -1,0 +1,7 @@
+Affiche : 400x700
+icon : 32x32
+logo : ???
+map : 500x281
+
+pop up cookie https://popupsmart.com/
+edit image : https://pixlr.com/fr/x/#editor

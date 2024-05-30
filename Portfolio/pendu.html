@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/penduico.png"/>
+    <title>Pendu</title>
+    <style>
+     .description-text {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="glass-container">
+            <nav class="navbar">
+                <div class="logo"><a href="#">Pendu Jeu</a></div>
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#" id="description-btn">Description</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" id="go-back-btn">Retour</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="main">
+                    <h2>Pendu😵<br></h2>
+                    <p>
+                        Créé en seconde, ce jeu du Pendu a été codé en Python <br>
+                    </p>
+                    <a href="https://github.com/ThomasMrs/Pendu-Jeu" target="_blank"><button>GitHub</button></a>
+                </div>
+            </div>
+                <div class="image-wrapper">
+                    <img src="/assets/pendu.png" alt="">
+                </div>
+                <div class="description-text" id="description-text">
+                    </br>
+                    </br>
+                    le jeu du pendu en Python. Il lit une liste de mots à partir d'un fichier texte, sélectionne un mot au hasard, puis invite l'utilisateur à deviner les lettres de ce mot. Le jeu affiche une partie du dessin du pendu à chaque erreur. Le joueur a jusqu'à 7 tentatives pour deviner correctement toutes les lettres du mot avant de perdre. Si le joueur trouve toutes les lettres avant d'atteindre 7 erreurs, il gagne.                    </br>
+                    </br> 
+                    </br> 
+                    le jeu du pendu en Python. Il lit une liste de mots à partir d'un fichier texte, sélectionne un mot au hasard, puis invite l'utilisateur à deviner les lettres de ce mot. Le jeu affiche une partie du dessin du pendu à chaque erreur. Le joueur a jusqu'à 7 tentatives pour deviner correctement toutes les lettres du mot avant de perdre. Si le joueur trouve toutes les lettres avant d'atteindre 7 erreurs, il gagne.
+                    </br>
+                    </br> 
+                    le jeu du pendu en Python. Il lit une liste de mots à partir d'un fichier texte, sélectionne un mot au hasard, puis invite l'utilisateur à deviner les lettres de ce mot. Le jeu affiche une partie du dessin du pendu à chaque erreur. Le joueur a jusqu'à 7 tentatives pour deviner correctement toutes les lettres du mot avant de perdre. Si le joueur trouve toutes les lettres avant d'atteindre 7 erreurs, il gagne.              </br>
+                    </br>
+                    Le joueur a jusqu'à 7 tentatives pour deviner correctement toutes les lettres du mot avant de perdre.                   </br>
+                    </br>
+                    Si le joueur trouve toutes les lettres avant d'atteindre 7 erreurs, il gagne.             </br>
+                    </br>                   </br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the description button and text elements
+        const descriptionBtn = document.getElementById('description-btn');
+        const descriptionText = document.getElementById('description-text');
+        const mainContent = document.querySelector('.main');
+        const imageWrapper = document.querySelector('.image-wrapper');
+
+        // Add an event listener to the description button
+        descriptionBtn.addEventListener('click', () => {
+            // Toggle the visibility of the description text and the rest of the content
+            descriptionText.style.display = 'block';
+            mainContent.style.display = 'none';
+            imageWrapper.style.display = 'none';
+        });
+
+        // Add an event listener to the go back button
+        const goBackBtn = document.getElementById('go-back-btn');
+        goBackBtn.addEventListener('click', () => {
+            // Toggle the visibility of the description text and the rest of the content
+            descriptionText.style.display = 'none';
+            mainContent.style.display = 'block';
+            imageWrapper.style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

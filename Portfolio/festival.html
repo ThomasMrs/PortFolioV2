@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/festivalico.png"/>
+    <title>Festival</title>
+    <style>
+     .description-text {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="glass-container">
+            <nav class="navbar">
+                <div class="logo"><a href="#">Pendu Jeu</a></div>
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#" id="description-btn">Description</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" id="go-back-btn">Retour</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="main">
+                    <h2>Festival HTML🎊<br></h2>
+                    <p>
+                        Créé en premiére, se site web est une page pour un festival<br>
+                    </p>
+                    <a href="./assets/Festival/index.html" target="_blank"><button>Voir le site</button></a>
+                </div>
+            </div>
+                <div class="image-wrapper">
+                    <img src="./assets/festival.jpg" alt="">
+                </div>
+                <div class="description-text" id="description-text">
+                    </br>
+                    </br>
+                    un site web d'un festival d'une page qui présente le plan, l'horaire et la liste des artistes du festival.                    </br> 
+                    </br> 
+                    Le site web a un thème de couleur sombre avec du texte et des icônes blancs.                    </br>
+                    </br> 
+                    L'en-tête du site web contient un logo, un menu de navigation et un bouton pour copier l'adresse e-mail du festival dans le presse-papiers.                    </br>
+                </br>
+                    La section principale du site web contient un plan du festival, un horaire des événements et une liste des artistes.</br>
+                </br>
+                    Chaque artiste a une vignette qui renvoie à son profil Spotify.                    </br>
+                </br>
+                    Le site web a également un pied de page qui contient des liens vers les profils de médias sociaux du festival et un bouton pour acheter des billets.</br>
+                </br> Le site web est réactif et s'adapte à différentes tailles d'écran.  
+            </br>                  </br> 
+                    Le site web a également un effet de fondu sur le texte de la bulle lorsqu'il est cliqué.                  </br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the description button and text elements
+        const descriptionBtn = document.getElementById('description-btn');
+        const descriptionText = document.getElementById('description-text');
+        const mainContent = document.querySelector('.main');
+        const imageWrapper = document.querySelector('.image-wrapper');
+
+        // Add an event listener to the description button
+        descriptionBtn.addEventListener('click', () => {
+            // Toggle the visibility of the description text and the rest of the content
+            descriptionText.style.display = 'block';
+            mainContent.style.display = 'none';
+            imageWrapper.style.display = 'none';
+        });
+
+        // Add an event listener to the go back button
+        const goBackBtn = document.getElementById('go-back-btn');
+        goBackBtn.addEventListener('click', () => {
+            // Toggle the visibility of the description text and the rest of the content
+            descriptionText.style.display = 'none';
+            mainContent.style.display = 'block';
+            imageWrapper.style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>
